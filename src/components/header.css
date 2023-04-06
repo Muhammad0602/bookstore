@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem 6rem;
+    height: 6rem;
+}
+
+.header h1 {
+    color: #0290ff;
+    font-size: 1.9rem;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #121212;
+    font-size: 0.8rem;
+}
