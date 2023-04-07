@@ -3,7 +3,7 @@ import React from 'react'
 function Book(props) {
   return (
     <div>
-      <p>{props.title} by </p>
+      <p>{props.title} </p>
       <p>{props.author}</p>
       <button>Remove</button>
     </div>

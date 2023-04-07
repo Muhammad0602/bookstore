@@ -1,25 +1,20 @@
 import React, { useState } from 'react';
 
-function BookForm() {
-
-  const [book, setBook] = useState({
-    title: 'Doctors of hope',
-    author: 'Max Stefan'
-  })
+function BookForm(props) {
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   function handleSubmit(e) {
     e.preventDefault();
-    setBook({
-      title: input.value,
-      author: input.value
-    })
-
+    props.setBooks([...props.books, {title, author}])
+    setTitle('');
+    setAuthor('');
   }
 
   return (
     <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Title" required />
-        <input type="text" placeholder="Author" required />
+        <input type="text" placeholder="Title" value={title} required onChange={ev => setTitle(ev.target.value)} />
+        <input type="text" placeholder="Author" value={author} required onChange={ev => setAuthor(ev.target.value)}/>
         <button>Add Book</button>
     </form>
   )
