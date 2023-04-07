@@ -9,10 +9,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<BookList/>} />
-        <Route path="/categories" element={<Categories />}/>
+        <Route path="/" element={<BookList />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
-    </>    
+    </>
   );
 }
 
