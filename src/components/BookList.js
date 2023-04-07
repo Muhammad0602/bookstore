@@ -1,8 +1,12 @@
 import React from 'react'
+import BookForm from './BookForm'
 
 function BookList() {
   return (
-    <div>BookList</div>
+    <>
+       <BookForm />
+    </>
+ 
   )
 }
 
