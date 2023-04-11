@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 function Book({ title, author }) {
   return (
     <div>
-      <h1>
+      <h3>
         {title}
         {' '}
-      </h1>
+      </h3>
       <p>
         Written by
+        {' '}
         {author}
       </p>
       <button type="button">Remove</button>
