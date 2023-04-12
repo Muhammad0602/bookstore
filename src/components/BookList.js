@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import BookForm from './BookForm';
 import Book from './Book';
 
 function BookList() {
-  const [books, setBooks] = useState([{
-    title: 'good doctor',
-    author: 'Mike',
-    id: 0,
-  }]);
-
+  const books = useSelector((state) => state.books.books);
   return (
     <>
-      {books.map((book) => <Book key={book.id} title={book.title} author={book.author} />)}
+      {books.map((book) => (
+        <Book
+          key={book.id}
+          id={book.id}
+          title={book.title}
+          author={book.author}
+        />
+      ))}
 
-      <BookForm books={books} setBooks={setBooks} />
+      <BookForm books={books} />
     </>
 
   );
