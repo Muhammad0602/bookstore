@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBooks } from '../redux/books/booksSlice';
 
-function BookForm({ books }) {
+function BookForm() {
+  const { books } = useSelector((store) => store.books);
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -11,7 +11,9 @@ function BookForm({ books }) {
   function handleSubmit(e) {
     e.preventDefault();
     const id = `item${books.length + 1}`;
-    dispatch(addBook({ title, author, id }));
+
+    dispatch(addBooks({ id, title, author }));
+
     setTitle('');
     setAuthor('');
   }
@@ -24,15 +26,5 @@ function BookForm({ books }) {
     </form>
   );
 }
-
-BookForm.propTypes = {
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-};
 
 export default BookForm;
