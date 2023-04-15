@@ -21,6 +21,76 @@ body {
   background-color: #fafafa;
 }
 
+// Form styles
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  gap: 1rem;
+  margin-bottom: 20rem;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $black;
+    opacity: 0.5;
+  }
+
+  .container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+
+    .title {
+      width: 55%;
+    }
+
+    .author {
+      width: 25%;
+    }
+
+    .form-btn {
+      font-family: 'Roboto Slab', serif;
+      background-color: $blue;
+      text-transform: uppercase;
+      width: 20%;
+      border: 1px solid $blue;
+      letter-spacing: 0.5px;
+      color: $white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .title,
+    .author,
+    .form-btn {
+      font-family: "Montserrat", sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border-radius: 3px;
+      border: 1px solid $gray;
+
+      &::placeholder {
+        color: $black;
+        opacity: 0.5;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $blue;
+      }
+    }
+
+    .form-btn:hover {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+}
 
 .main {
   display: flex;
@@ -29,6 +99,48 @@ body {
   gap: 2rem;
   padding: 0 6rem;
   margin-top: 5rem;
+
+  .chapter {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    gap: 0.5rem;
+
+    h4 {
+      opacity: 0.5;
+      text-transform: uppercase;
+      font-size: 0.813rem;
+      font-weight: 400;
+      color: $black;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: -0.4px;
+    }
+
+    button {
+      padding: 0.6rem 1rem;
+      border-radius: 3px;
+      width: 11.5rem;
+      font-family: 'Roboto Slab', serif;
+      background-color: $blue;
+      letter-spacing: 0.5px;
+      font-size: 0.8rem;
+      font-weight: 300;
+      border: 1px solid;
+      color: $white;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
 
   .book-container {
     display: flex;
@@ -157,115 +269,73 @@ body {
   margin: 2.5rem 0 1.813rem;
 }
 
-.chapter {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto Slab', serif;
-  gap: 0.5rem;
+// // Form styles
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   width: 85%;
+//   gap: 1rem;
+//   margin-bottom: 20rem;
 
-  h4 {
-    opacity: 0.5;
-    text-transform: uppercase;
-    font-size: 0.813rem;
-    font-weight: 400;
-    color: $black;
-  }
+//   h2 {
+//     font-size: 1.25rem;
+//     font-weight: 800;
+//     text-transform: uppercase;
+//     color: $black;
+//     opacity: 0.5;
+//   }
 
-  p {
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: -0.4px;
-  }
+//   .container {
+//     display: flex;
+//     gap: 2rem;
+//     width: 100%;
 
-  button {
-    padding: 0.6rem 1rem;
-    border-radius: 3px;
-    width: 11.5rem;
-    font-family: 'Roboto Slab', serif;
-    background-color: $blue;
-    letter-spacing: 0.5px;
-    font-size: 0.8rem;
-    font-weight: 300;
-    border: 1px solid;
-    color: $white;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+//     .title {
+//       width: 55%;
+//     }
 
-    &:hover {
-      background-color: $white;
-      color: $blue;
-    }
-  }
-}
+//     .author {
+//       width: 25%;
+//     }
 
-// Form styles
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 85%;
-  gap: 1rem;
-  margin-bottom: 20rem;
+//     .form-btn {
+//       font-family: 'Roboto Slab', serif;
+//       background-color: $blue;
+//       text-transform: uppercase;
+//       width: 20%;
+//       border: 1px solid $blue;
+//       letter-spacing: 0.5px;
+//       color: $white;
+//       font-size: 0.8rem;
+//       font-weight: 700;
+//       transition: all 0.2s ease-in-out;
+//       cursor: pointer;
+//     }
 
-  h2 {
-    font-size: 1.25rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: $black;
-    opacity: 0.5;
-  }
+//     .title,
+//     .author,
+//     .form-btn {
+//       font-family: "Montserrat", sans-serif;
+//       padding: 0.75rem 1rem;
+//       font-size: 1rem;
+//       border-radius: 3px;
+//       border: 1px solid $gray;
 
-  .container {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
+//       &::placeholder {
+//         color: $black;
+//         opacity: 0.5;
+//       }
 
-    .title {
-      width: 55%;
-    }
+//       &:focus {
+//         outline: none;
+//         border: 1px solid $blue;
+//       }
+//     }
 
-    .author {
-      width: 25%;
-    }
-
-    .form-btn {
-      font-family: 'Roboto Slab', serif;
-      background-color: $blue;
-      text-transform: uppercase;
-      width: 20%;
-      border: 1px solid $blue;
-      letter-spacing: 0.5px;
-      color: $white;
-      font-size: 0.8rem;
-      font-weight: 700;
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-    }
-
-    .title,
-    .author,
-    .form-btn {
-      font-family: "Montserrat", sans-serif;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-      border-radius: 3px;
-      border: 1px solid $gray;
-
-      &::placeholder {
-        color: $black;
-        opacity: 0.5;
-      }
-
-      &:focus {
-        outline: none;
-        border: 1px solid $blue;
-      }
-    }
-
-    .form-btn:hover {
-      background-color: $white;
-      color: $blue;
-    }
-  }
-}
+//     .form-btn:hover {
+//       background-color: $white;
+//       color: $blue;
+//     }
+//   }
+// }
