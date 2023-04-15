@@ -20,7 +20,7 @@ export const addBooks = createAsyncThunk(
     try {
       const newBook = {
         item_id: id,
-        category: 'find it yourself',
+        category: 'Fiction',
         title,
         author,
       };

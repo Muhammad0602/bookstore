@@ -19,10 +19,13 @@ function BookForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Title" value={title} required onChange={(ev) => setTitle(ev.target.value)} />
-      <input type="text" placeholder="Author" value={author} required onChange={(ev) => setAuthor(ev.target.value)} />
-      <button type="submit">Add Book</button>
+    <form className="form" onSubmit={handleSubmit} action="">
+      <h2>Add new book</h2>
+      <div className="container">
+        <input className="title" type="text" placeholder="Title" value={title} required onChange={(ev) => setTitle(ev.target.value)} />
+        <input className="author" type="text" placeholder="Author" value={author} required onChange={(ev) => setAuthor(ev.target.value)} />
+        <button className="form-btn" type="submit">Add Book</button>
+      </div>
     </form>
   );
 }

@@ -12,18 +12,21 @@ function BookList() {
     dispatch(getBooks());
   }, [dispatch]);
   return (
-    <>
+    <main className="main">
       {books && books.length > 0 ? books.map((book) => (
         <Book
           key={book.item_id}
           id={book.item_id}
           title={book.title}
           author={book.author}
+          category={book.category}
         />
       )) : <p>No Books</p>}
 
+      <div className="horizontal-line" />
+
       <BookForm />
-    </>
+    </main>
 
   );
 }

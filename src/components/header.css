@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 5rem;
   padding: 1.5rem 6rem;
   height: 6rem;
+  width: 98.8vw;
+  background-color: #fff;
+  border-bottom: solid 1px #e8e8e8;
 }
 
 .header h1 {
@@ -15,11 +18,40 @@
 .header ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .header ul li a {
   text-decoration: none;
   color: #121212;
   font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.header ul li a:hover {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.icon-button {
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  padding: 0.875rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  color: #0290ff;
+}
+
+.links {
+  margin-right: auto;
+}
+
+.user {
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
