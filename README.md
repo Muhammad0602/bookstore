@@ -46,8 +46,9 @@ This is a simple website for book readers. You can keep track of your progress, 
 
 ### Key Features <a name="key-features"></a>
 
-- Interactions.
-- Time tracking.
+- Add new books.
+- Remove books you have read.
+- Keep truck of your progress.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
