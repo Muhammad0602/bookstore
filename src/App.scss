@@ -92,6 +92,22 @@ body {
   }
 }
 
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    color: black;
+  }
+
+  p {
+    color: red;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -273,22 +289,6 @@ body {
   text-align: center;
   font-size: 3rem;
   line-height: 80vh;
-}
-
-.error-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h2 {
-    font-size: 2rem;
-    color: black;
-  }
-
-  p {
-    color: red;
-  }
 }
 
 .status-btn {
