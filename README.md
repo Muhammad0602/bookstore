@@ -28,7 +28,7 @@
 
 # 📖Bookstore <a name="about-project"></a>
 
-This is a simple website for book readers. You can keep track of your progress, add as many books as you want. You can also remove the books that you already finished.
+This bookstore website is designed to provide an interactive platform for book enthusiasts to manage their reading progress and keep track of their book collection. The website allows users to add books to their personal library, track their reading progress, and remove books that they have already read.
 
 ## 🛠 Built With <a name="built-with"></a>
 
