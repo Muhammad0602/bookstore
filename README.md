@@ -54,7 +54,7 @@ This bookstore website is designed to provide an interactive platform for book e
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Visit Live](Coming soon...)
+[Visit Live](https://bookstore-gby2.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
