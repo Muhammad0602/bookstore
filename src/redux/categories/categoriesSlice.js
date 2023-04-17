@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   categories: [],
+  isLoading: false,
   status: '',
 };
 
@@ -12,6 +13,7 @@ export const categories = createSlice({
     checkStatus: (state) => ({
       ...state,
       status: 'Under Construction',
+      isLoading: true,
     }),
   },
 });
